@@ -1,13 +1,13 @@
 //Setting Parameters
-const savingsActivity = document.querySelector(".savingsAddActivity");
-const spendingsActivity = document.querySelector(".spendingsAddActivity");
-const expenseValue = document.querySelector(".expenseValue");
-const spendingsValue = document.querySelector(".spendingsValue");
+const savingsActivity = document.querySelector('.savingsAddActivity');
+const spendingsActivity = document.querySelector('.spendingsAddActivity');
+const expenseValue = document.querySelector('.expenseValue');
+const spendingsValue = document.querySelector('.spendingsValue');
 
-const totalSavingsValue = document.querySelector(".savingsTotal");
-const totalSpendingsValue = document.querySelector(".spendingsTotal");
-const setAccumulator = document.querySelector(".accumulatorValue");
-const resetValue = document.querySelector(".resetStyle button");
+const totalSavingsValue = document.querySelector('.savingsTotal');
+const totalSpendingsValue = document.querySelector('.spendingsTotal');
+const setAccumulator = document.querySelector('.accumulatorValue');
+const resetValue = document.querySelector('.resetStyle button');
 
 //Setting some defualt values
 let savingId = 1;
@@ -38,32 +38,24 @@ class Spendings {
 //Adding savings items to list
 
 addSavingItem = () => {
-  if (savingsActivity.value !== "" && expenseValue.value !== "") {
-    const savingItemObject = new Savings(
-      savingsActivity.value,
-      expenseValue.value,
-      savingId++
-    );
+  if (savingsActivity.value !== '' && expenseValue.value !== '') {
+    const savingItemObject = new Savings(savingsActivity.value, expenseValue.value, savingId++);
     //console.log(savingItemObject);
-    let savingItem = `<div id="savingsItem_${
-      savingItemObject.savingId
-    }" class="savingsItem">
+    let savingItem = `<div id="savingsItem_${savingItemObject.savingId}" class="savingsItem">
                         <p>${savingItemObject.item.toUpperCase()}</p>
                         <p>$${savingItemObject.value}</p>
-                        <button id="deleteButton_${
-                          savingItemObject.savingId
-                        }">Delete</button>
+                        <button id="deleteButton_${savingItemObject.savingId}">Delete</button>
                         </div>`;
-    let element = ".addSavingItemList";
+    let element = '.addSavingItemList';
 
     //Adding item in list
-    document.querySelector(element).insertAdjacentHTML("beforeend", savingItem);
+    document.querySelector(element).insertAdjacentHTML('beforeend', savingItem);
 
     //Adding items to array
     savingsArray.push(savingItemObject);
 
     //Calulating Total Saving
-    if (savingItemObject.value !== "") {
+    if (savingItemObject.value !== '') {
       savingsTotal += parseInt(savingItemObject.value);
       totalSavingsValue.textContent = `$${savingsTotal}`;
     } else {
@@ -73,7 +65,7 @@ addSavingItem = () => {
     //Button to delete savings items from list
     document
       .getElementById(`deleteButton_${savingItemObject.savingId}`)
-      .addEventListener("click", () =>
+      .addEventListener('click', () =>
         deleteSavingItem(savingItemObject.savingId, savingItemObject.value)
       );
 
@@ -89,20 +81,20 @@ addSavingItem = () => {
       totalSavingsValue.textContent = `$${savingsTotal}`;
 
       //Updating Accumulator
-      setAccumulator.textContent = "";
+      setAccumulator.textContent = '';
     };
   }
 
   //Clearing values
-  savingsActivity.value = "";
-  expenseValue.value = "";
+  savingsActivity.value = '';
+  expenseValue.value = '';
   savingsActivity.focus();
 };
 
 //Adding spending items to list
 
 addSpendingItem = () => {
-  if (spendingsActivity.value !== "" && spendingsValue.value !== "") {
+  if (spendingsActivity.value !== '' && spendingsValue.value !== '') {
     const spendingItemObject = new Spendings(
       spendingsActivity.value,
       spendingsValue.value,
@@ -118,18 +110,16 @@ addSpendingItem = () => {
                               spendingItemObject.spendingId
                             }">Delete</button>
                             </div>`;
-    let element = ".addSpendingItemList";
+    let element = '.addSpendingItemList';
 
     //Adding item in list
-    document
-      .querySelector(element)
-      .insertAdjacentHTML("beforeend", spendingItem);
+    document.querySelector(element).insertAdjacentHTML('beforeend', spendingItem);
 
     //Adding items to array
     spendingsArray.push(spendingItemObject);
 
     //Calulating Total Spending
-    if (spendingItemObject.value !== "") {
+    if (spendingItemObject.value !== '') {
       spendingTotal += parseInt(spendingItemObject.value);
       totalSpendingsValue.textContent = `$${spendingTotal}`;
     } else {
@@ -139,11 +129,8 @@ addSpendingItem = () => {
     //Button to delete Spending items from list
     document
       .getElementById(`deleteButtonSpending_${spendingItemObject.spendingId}`)
-      .addEventListener("click", () =>
-        deleteSpendingItem(
-          spendingItemObject.spendingId,
-          spendingItemObject.value
-        )
+      .addEventListener('click', () =>
+        deleteSpendingItem(spendingItemObject.spendingId, spendingItemObject.value)
       );
 
     //Deleting spendings items from list.
@@ -158,13 +145,13 @@ addSpendingItem = () => {
       totalSpendingsValue.textContent = `$${spendingTotal}`;
 
       //Updating Accumulator
-      setAccumulator.textContent = "";
+      setAccumulator.textContent = '';
     };
   }
 
   //Clearing values
-  spendingsActivity.value = "";
-  spendingsValue.value = "";
+  spendingsActivity.value = '';
+  spendingsValue.value = '';
   spendingsActivity.focus();
 };
 
@@ -175,19 +162,17 @@ resetFields = () => {
 
 //Button to submit savings item
 
-document.querySelector(".addSaving").addEventListener("click", addSavingItem);
+document.querySelector('.addSaving').addEventListener('click', addSavingItem);
 
-expenseValue.addEventListener("keydown", (event) => {
-  if (event.keyCode === 13 && savingsActivity.value !== "") addSavingItem();
+expenseValue.addEventListener('keydown', event => {
+  if (event.keyCode === 13 && savingsActivity.value !== '') addSavingItem();
 });
 
 //Button to submit spendings item
-document
-  .querySelector(".addSpending")
-  .addEventListener("click", addSpendingItem);
+document.querySelector('.addSpending').addEventListener('click', addSpendingItem);
 
-spendingsValue.addEventListener("keydown", (event) => {
-  if (event.keyCode === 13 && spendingsActivity.value !== "") addSpendingItem();
+spendingsValue.addEventListener('keydown', event => {
+  if (event.keyCode === 13 && spendingsActivity.value !== '') addSpendingItem();
 });
 
 //Updating date for header
@@ -195,28 +180,28 @@ let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
 const months = [
-  "Janauary",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  'Janauary',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
 ];
 let headerDate = `Budget for ${months[month]},${year}`;
 
-document.querySelector("#header h3").textContent = headerDate;
+document.querySelector('#header h3').textContent = headerDate;
 
 //Updating Accumulator
-document.querySelector(".accumulator button").addEventListener("click", () => {
+document.querySelector('.accumulator button').addEventListener('click', () => {
   accumulator = savingsTotal - spendingTotal;
   setAccumulator.textContent = `$${accumulator}`;
 });
 
 //Resetting Values
-resetValue.addEventListener("click", resetFields);
+resetValue.addEventListener('click', resetFields);

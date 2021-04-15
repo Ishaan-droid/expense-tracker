@@ -1,501 +1,502 @@
 /* Mobile phone */
 @media only screen and (max-width: 760px) {
-    /* Header Styling */
+  /* Header Styling */
 
-    #header h1 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-    
-    #header h3 {
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
+  #header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
 
-    /* enterAmount Styling */
+  #header h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
-    .amountStyle {
-        padding: 1rem;
-    }
+  /* enterAmount Styling */
 
-    .responsiveAmountStyle1 {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: space-evenly;
-         margin: 0.5rem;
-    }
+  .amountStyle {
+    padding: 1rem;
+  }
 
-    .responsiveAmountStyle2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0.5rem;
-    }
+  .responsiveAmountStyle1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+  }
 
-    /* Savings Style */
+  .responsiveAmountStyle2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+  }
 
-    .savingsAddActivity {
-        height: 2rem;
-        width: 8rem;
-        border: solid 1px rgb(19, 71, 32);
-        outline: none;
-        border-radius: 0.25rem;
-        padding-left: 1rem;
-    }   
+  /* Savings Style */
 
-    .savingsAddActivity::placeholder {
-        font-size: 0.8rem;
-    }   
+  .savingsAddActivity {
+    height: 2rem;
+    width: 8rem;
+    border: solid 1px rgb(19, 71, 32);
+    outline: none;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+  }
 
-    .expenseValue {
-        width: 4rem;
-        height: 2rem;
-        outline: none;
-        border: solid 1px rgb(19, 71, 32);
-        padding-left: 1rem;
-        border-radius: 0.25rem;
-    }
+  .savingsAddActivity::placeholder {
+    font-size: 0.8rem;
+  }
 
-    .expenseValue::placeholder {
-        font-size: 0.8rem;
-    }
+  .expenseValue {
+    width: 4rem;
+    height: 2rem;
+    outline: none;
+    border: solid 1px rgb(19, 71, 32);
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+  }
 
-    .addSaving {
-        width: 4rem;
-        height: 2rem;
-        font-size: 0.6rem;
-        background-color: #28a745;
-        color: white;
-        border-radius: 0.25rem;
-        border: 1px solid transparent;
-        border-color: #28a745;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    }
+  .expenseValue::placeholder {
+    font-size: 0.8rem;
+  }
 
-    /* Spendings Style */
+  .addSaving {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    border-color: #28a745;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
 
-    .spendingsAddActivity {
-        width: 8rem;
-        height: 2rem;
-        outline: none;
-        border: solid 1px #dc3545;
-        padding-left: 1rem;
-        border-radius: 0.25rem;
-    }
+  /* Spendings Style */
 
-    .spendingsAddActivity::placeholder {
-        font-size: 0.8rem;
-    }
+  .spendingsAddActivity {
+    width: 8rem;
+    height: 2rem;
+    outline: none;
+    border: solid 1px #dc3545;
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+  }
 
-    .spendingsValue {
-        width: 4rem;
-        height: 2rem;
-        outline: none;
-        border: solid 1px #dc3545;
-        padding-left: 1rem;
-        border-radius: 0.25rem;
-    }
+  .spendingsAddActivity::placeholder {
+    font-size: 0.8rem;
+  }
 
-    .spendingsValue::placeholder {
-        font-size: 0.8rem;
-    }
+  .spendingsValue {
+    width: 4rem;
+    height: 2rem;
+    outline: none;
+    border: solid 1px #dc3545;
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+  }
 
-    .addSpending {
-        width: 4rem;
-        height: 2rem;
-        font-size: 0.6rem;
-        background-color: #dc3545;
-        color: white;
-        border-radius: 0.25rem;
-        border: 1px solid transparent;
-        border-color: #dc3545;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    }
+  .spendingsValue::placeholder {
+    font-size: 0.8rem;
+  }
 
-    /* Reset */
+  .addSpending {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    border-color: #dc3545;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
 
-    .resetStyle button {
-        width: 6rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
+  /* Reset */
 
-    /* Expense Tracker Styling */
+  .resetStyle button {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
 
-    .savings {
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  /* Expense Tracker Styling */
 
-    .savings h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+  .savings {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .savingsItem {
-        margin: 0.5rem;
-    }
+  .savings h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-    .savingsItem p {
-        /* font-weight: 600; */
-        font-size: medium;
-        /* margin-bottom: 0.3rem; */
-    }
+  .savingsItem {
+    margin: 0.5rem;
+  }
 
-    .savingsItem button {
-        width: 4rem;
-        height: 1.5rem;
-        font-size: 0.8rem;
-    }
+  .savingsItem p {
+    /* font-weight: 600; */
+    font-size: medium;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    /* Spendings */
+  .savingsItem button {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
 
-    .spendings {
-        padding: 2rem 0.5rem 0rem 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  /* Spendings */
 
-    .spendings h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+  .spendings {
+    padding: 2rem 0.5rem 0rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .spendingsItem {
-        margin: 0.5rem;
-    }
+  .spendings h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-    .spendingsItem p {
-        /* font-weight: 600; */
-        font-size: medium;
-        /* margin-bottom: 0.3rem; */
-    }
+  .spendingsItem {
+    margin: 0.5rem;
+  }
 
-    .spendingsItem button {
-        width: 4rem;
-        height: 1.5rem;
-        font-size: 0.8rem;
-    }
+  .spendingsItem p {
+    /* font-weight: 600; */
+    font-size: medium;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    /* Accumulator */
+  .spendingsItem button {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
 
-    .accumulator {
-        font-size: 1.5rem;
-    }
+  /* Accumulator */
 
-    .accumulator button {
-        margin: 1rem;
-    }
+  .accumulator {
+    font-size: 1.5rem;
+  }
+
+  .accumulator button {
+    margin: 1rem;
+  }
 }
 
 /*Tablets */
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
-    
-    /* Header Styling */
+  /* Header Styling */
 
-    #header h3 {
-        font-size: 2.5rem;
-    }
+  #header h3 {
+    font-size: 2.5rem;
+  }
 
-    /* enterAmount Styling */
+  /* enterAmount Styling */
 
-    .amountStyle {
-        padding: 2rem 2rem 3.5rem 2rem;
-    }
+  .amountStyle {
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
 
-    /* Savings Style */
+  /* Savings Style */
 
-    .responsiveAmountStyle1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .responsiveAmountStyle1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .savingsAddActivity {
-        height: 2.5rem;
-        width: 10rem;
-    }   
+  .savingsAddActivity {
+    height: 2.5rem;
+    width: 10rem;
+  }
 
-    .savingsAddActivity::placeholder {
-        font-size: 1rem;
-    }   
+  .savingsAddActivity::placeholder {
+    font-size: 1rem;
+  }
 
-    .expenseValue {
-        width: 4rem;
-        height: 2.5rem;
-    }
+  .expenseValue {
+    width: 4rem;
+    height: 2.5rem;
+  }
 
-    .expenseValue::placeholder {
-        font-size: 1rem;
-    }
+  .expenseValue::placeholder {
+    font-size: 1rem;
+  }
 
-    .addSaving {
-        width: 5rem;
-        height: 2.5rem;
-        font-size: 0.8rem;
-    }
+  .addSaving {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
 
-    /* Spendings Style */
+  /* Spendings Style */
 
-    .responsiveAmountStyle2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .responsiveAmountStyle2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .spendingsAddActivity {
-        height: 2.5rem;
-        width: 10rem;
-    }   
+  .spendingsAddActivity {
+    height: 2.5rem;
+    width: 10rem;
+  }
 
-    .spendingsAddActivity::placeholder {
-        font-size: 1rem;
-    }   
+  .spendingsAddActivity::placeholder {
+    font-size: 1rem;
+  }
 
-    .spendingsValue {
-        width: 4rem;
-        height: 2.5rem;
-    }
+  .spendingsValue {
+    width: 4rem;
+    height: 2.5rem;
+  }
 
-    .spendingsValue::placeholder {
-        font-size: 1rem;
-    }
+  .spendingsValue::placeholder {
+    font-size: 1rem;
+  }
 
-    .addSpending {
-        width: 5rem;
-        height: 2.5rem;
-        font-size: 0.8rem;
-    }
+  .addSpending {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
 
-    /* Expense Tracker Styling */
+  /* Expense Tracker Styling */
 
-    .savings {
-        padding: 3rem 0.5rem 0.5rem 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  .savings {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .savings h3 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+  .savings h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-    .savingsItem {
-        margin: 0.8rem;
-    }
+  .savingsItem {
+    margin: 0.8rem;
+  }
 
-    .savingsItem p {
-        font-weight: 600;
-        font-size: 1.5rem;
-        /* margin-bottom: 0.3rem; */
-    }
+  .savingsItem p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    .savingsItem button {
-        width: 5rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
+  .savingsItem button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
 
-    /* Spendings */
+  /* Spendings */
 
-    .spendings {
-        padding: 3rem 0.5rem 0.5rem 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  .spendings {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .spendings h3 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+  .spendings h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-    .spendingsItem {
-        margin: 0.8rem;
-    }
+  .spendingsItem {
+    margin: 0.8rem;
+  }
 
-    .spendingsItem p {
-        font-weight: 600;
-        font-size: 1.5rem;
-        /* margin-bottom: 0.3rem; */
-    }
+  .spendingsItem p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    .spendingsItem button {
-        width: 5rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
+  .spendingsItem button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
 
-    /* Accumulator */
+  /* Accumulator */
 
-    .accumulator {
-        font-size: 2rem;
-    }
+  .accumulator {
+    font-size: 2rem;
+  }
 
-    .accumulator button {
-        margin: 1rem;
-        font-size: 1rem;
-    }
+  .accumulator button {
+    margin: 1rem;
+    font-size: 1rem;
+  }
 }
 
- /*Tablet Pro */
- @media only screen and (max-width: 1220px) and (min-width: 1000px) {
-    /* enterAmount Styling */
+/*Tablet Pro */
+@media only screen and (max-width: 1220px) and (min-width: 1000px) {
+  /* enterAmount Styling */
 
-    .amountStyle {
-        padding: 2rem 2rem 3.5rem 2rem;
-    }
+  .amountStyle {
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
 
-    /* Savings Style */
+  /* Savings Style */
 
-    .responsiveAmountStyle1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .responsiveAmountStyle1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .savingsAddActivity {
-        height: 3rem;
-        width: 12.5rem;
-    }   
+  .savingsAddActivity {
+    height: 3rem;
+    width: 12.5rem;
+  }
 
-    .savingsAddActivity::placeholder {
-        font-size: 1.5rem;
-    }   
+  .savingsAddActivity::placeholder {
+    font-size: 1.5rem;
+  }
 
-    .expenseValue {
-        width: 6rem;
-        height: 3rem;
-    }
+  .expenseValue {
+    width: 6rem;
+    height: 3rem;
+  }
 
-    .expenseValue::placeholder {
-        font-size: 1.5rem;
-    }
+  .expenseValue::placeholder {
+    font-size: 1.5rem;
+  }
 
-    .addSaving {
-        width: 6rem;
-        height: 3rem;
-        font-size: 1rem;
-    }
+  .addSaving {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
 
-    /* Spendings Style */
+  /* Spendings Style */
 
-    .responsiveAmountStyle2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .responsiveAmountStyle2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .spendingsAddActivity {
-        height: 3rem;
-        width: 12.5rem;
-    }   
+  .spendingsAddActivity {
+    height: 3rem;
+    width: 12.5rem;
+  }
 
-    .spendingsAddActivity::placeholder {
-        font-size: 1.5rem;
-    }   
+  .spendingsAddActivity::placeholder {
+    font-size: 1.5rem;
+  }
 
-    .spendingsValue {
-        width: 6rem;
-        height: 3rem;
-    }
+  .spendingsValue {
+    width: 6rem;
+    height: 3rem;
+  }
 
-    .spendingsValue::placeholder {
-        font-size: 1.5rem;
-    }
+  .spendingsValue::placeholder {
+    font-size: 1.5rem;
+  }
 
-    .addSpending {
-        width: 6rem;
-        height: 3rem;
-        font-size: 1rem;
-    }
+  .addSpending {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
 
-    /* Expense Tracker Styling */
+  /* Expense Tracker Styling */
 
-    .savings {
-        padding: 3rem 0.5rem 0.5rem 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  .savings {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .savings h3 {
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+  .savings h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 
-    .savingsItem {
-        margin: 0.8rem;
-    }
+  .savingsItem {
+    margin: 0.8rem;
+  }
 
-    .savingsItem p {
-        font-weight: 600;
-        font-size: 1.8rem;
-        /* margin-bottom: 0.3rem; */
-    }
+  .savingsItem p {
+    font-weight: 600;
+    font-size: 1.8rem;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    .savingsItem button {
-        width: 6rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
+  .savingsItem button {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
 
-    /* Spendings */
+  /* Spendings */
 
-    .spendings {
-        padding: 3rem 0.5rem 0.5rem 0.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  .spendings {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    .spendings h3 {
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+  .spendings h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 
-    .spendingsItem {
-        margin: 0.8rem;
-    }
+  .spendingsItem {
+    margin: 0.8rem;
+  }
 
-    .spendingsItem p {
-        font-weight: 600;
-        font-size: 1.8rem;
-        /* margin-bottom: 0.3rem; */
-    }
+  .spendingsItem p {
+    font-weight: 600;
+    font-size: 1.8rem;
+    /* margin-bottom: 0.3rem; */
+  }
 
-    .spendingsItem button {
-        width: 6rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
+  .spendingsItem button {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
 
-    /* Accumulator */
+  /* Accumulator */
 
-    .accumulator {
-        font-size: 2rem;
-    }
+  .accumulator {
+    font-size: 2rem;
+  }
 
-    .accumulator button {
-        margin: 1rem;
-        font-size: 1.1rem;
-    }
- }
+  .accumulator button {
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+}
