@@ -37,7 +37,7 @@ class Spendings {
 
 //Adding savings items to list
 
-addSavingItem = () => {
+const addSavingItem = () => {
   if (savingsActivity.value !== '' && expenseValue.value !== '') {
     const savingItemObject = new Savings(savingsActivity.value, expenseValue.value, savingId++);
     //console.log(savingItemObject);
@@ -70,7 +70,7 @@ addSavingItem = () => {
       );
 
     //Deleting savings items from list.
-    deleteSavingItem = (id, value) => {
+    const deleteSavingItem = (id, value) => {
       //Deleting item from list
       document.getElementById(`savingsItem_${id}`).remove();
 
@@ -93,7 +93,7 @@ addSavingItem = () => {
 
 //Adding spending items to list
 
-addSpendingItem = () => {
+const addSpendingItem = () => {
   if (spendingsActivity.value !== '' && spendingsValue.value !== '') {
     const spendingItemObject = new Spendings(
       spendingsActivity.value,
@@ -134,7 +134,7 @@ addSpendingItem = () => {
       );
 
     //Deleting spendings items from list.
-    deleteSpendingItem = (id, value) => {
+    const deleteSpendingItem = (id, value) => {
       //Deleting item from list
       document.getElementById(`spendingsItem_${id}`).remove();
 
@@ -156,7 +156,7 @@ addSpendingItem = () => {
 };
 
 //Resetting Values
-resetFields = () => {
+const resetFields = () => {
   location.reload();
 };
 
